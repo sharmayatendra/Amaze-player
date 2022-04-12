@@ -1,0 +1,24 @@
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --body-bgcolor: rgb(230, 230, 230);
+}
+
+.container-product {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 
+    "header header header header header"
+    "sidebar main  main   main   main"
+    "sidebar main  main   main   main";
+}
+
+.video-listing-section {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}

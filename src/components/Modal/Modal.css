@@ -1,0 +1,31 @@
+.modal-menu {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--bg-color2);
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+}
+
+.modal-icons {
+    color: var(--color-white);
+    margin-right: 8px;
+}
+
+.modal-btn {
+    border: none;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1em;
+    color: var(--color-white);
+    background-color: var(--bg-color2);
+}
+
+.modal-btn:hover {
+    background-color: var(--body-bg-color);
+    cursor: pointer;
+}
