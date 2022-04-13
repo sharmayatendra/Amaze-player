@@ -10,7 +10,6 @@ function VideoListing() {
     (async function fetchVideos() {
       try {
         const resp = await axios.get("/api/videos")
-        console.log(resp);
         setVideos(resp.data.videos)
       }catch(error) {
         console.log(error);
