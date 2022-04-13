@@ -1,0 +1,42 @@
+.drawer-container {
+    grid-area: sidebar;
+    padding: 1rem;
+    top: 2rem;
+    background-color: var(--bg-color2);
+    width: 16rem;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar-text {
+    color: var(--color-white);
+}
+
+.drawer-list-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.list-item {
+    font-size: 1.2rem;
+}
+
+/* .list:hover {
+    background-color: rgb(204, 200, 200);
+    border-radius: 4px;
+} */

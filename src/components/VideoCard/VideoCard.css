@@ -1,0 +1,39 @@
+.card {
+    width: 18rem;
+    margin-top: 0;
+    box-shadow: none
+}
+
+.card-heading-wrapper {
+    margin: 0;
+    padding: 4px;
+}
+
+.card-main-heading {
+    color: var(--color-white);
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.card-footer {
+    padding: 4px;
+    margin-top: 0;
+    justify-content: space-between;
+    position: relative;
+}
+.footer-views , .footer-uploaded{
+    color: var(--color-grey);
+}
+
+.kebab-menu {
+    color: var(--color-white);
+}
+
+.card-footer-wrapper {
+    display: flex;
+    gap: 4px;
+}
+
+.kebab-menu:hover {
+    cursor: pointer;
+}
