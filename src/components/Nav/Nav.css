@@ -37,7 +37,7 @@
 }
 
 .video-icon {
-    color: rgb(247, 28, 28);
+    color: var(--color-red);
     font-size: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;

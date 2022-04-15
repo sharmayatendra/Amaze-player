@@ -1,0 +1,76 @@
+.container-login {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "header header header header header"
+        ".      .      main   .      .";
+}
+
+.login-container {
+    grid-area: main;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    background-color: var(--bg-color2);
+    padding: 1rem;
+    width: 25rem;
+}
+
+.card-login>h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 0;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 0;
+}
+
+.login-heading {
+ color: var(--color-white);
+}
+
+input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+.login-btn {
+    margin: 1rem 0;
+    background-color: var(--color-red);
+}
+
+.reset-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-account-container {
+    display: flex;
+    align-items: center;
+}
+
+.right-icon {
+    color: var(--primary-color);
+    margin: 0;
+    cursor: pointer;
+}
+
+.label-txt {
+    color: var(--color-white);
+}
