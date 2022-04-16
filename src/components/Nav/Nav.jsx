@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/auth-context';
 
 function Nav() {
-  const {state: {isAuth , token}, dispatch} = useAuth()
+  const {state: {isAuth}, dispatch} = useAuth()
 
-  console.log('akjgbahd',isAuth,token);
   const logoutHandler = () => {
     localStorage.clear()
     dispatch({type: 'CLEAR'})
@@ -16,7 +15,7 @@ function Nav() {
 <header className="header">
   <div className="header-left-icons">
     
-    <i class="material-icons-outlined video-icon">
+    <i className="material-icons-outlined video-icon">
     videocam
     </i>
     <Link to="/">

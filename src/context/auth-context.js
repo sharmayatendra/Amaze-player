@@ -9,7 +9,6 @@ const AuthProvider = ({children}) => {
         user:"" , token: tokenDetails , isAuth: !!tokenDetails
     })
 
-    console.log(state.isAuth , state.token);
     return(
         <AuthContext.Provider value={{state,dispatch}}>
             {children}
