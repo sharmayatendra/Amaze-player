@@ -22,7 +22,7 @@ function VideoCard({video , videoId}) {
             <p className="footer-views">•</p>
             <p className="footer-uploaded">{video.uploaded}</p>
             </div>
-            <i class="material-icons-outlined kebab-menu" onClick={() => setShowModal(modalState => !modalState)}>more_vert</i>
+            <i className="material-icons-outlined kebab-menu" onClick={() => setShowModal(modalState => !modalState)}>more_vert</i>
             {showModal && <Modal />}
         </footer>
     </div> 

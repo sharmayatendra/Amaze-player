@@ -23,7 +23,7 @@ function VideoListing() {
       <Nav />
       <Sidebar />
         <section className='video-listing-section'>
-          {videos.map(item => < VideoCard video={item} videoId={item._id}/>)}
+          {videos.map(item => <VideoCard video={item} videoId={item._id} key={item._id}/>)}
         </section>
     </div>
   )
