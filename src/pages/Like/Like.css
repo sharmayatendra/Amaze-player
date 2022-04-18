@@ -1,0 +1,20 @@
+.container-like {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "sidebar liked liked liked"
+    "sidebar liked  liked  liked"
+    ;
+}
+
+.liked-video-container {
+    grid-area: liked;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    
+}
