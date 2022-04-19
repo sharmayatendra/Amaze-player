@@ -8,12 +8,14 @@ function Sidebar() {
         <div className="drawer-container">
            
             <div className="drawer-list-container">
+                <Link to='/'>
                 <div className="list">
                     <i className="material-icons-outlined icons">
                         explore
                     </i>
                     <p className="list-item sidebar-text">Explore</p>
                 </div>
+                </Link>
 
                 <div className="list">
                     <i className="material-icons-outlined icons">
@@ -31,12 +33,14 @@ function Sidebar() {
                 </div>
                 </Link>
 
+                <Link to='/watchlater'>
                 <div className="list">
                     <i className="material-icons-outlined icons">
                         watch_later
                     </i>
                     <p className="list-item sidebar-text">Watch Later</p>
                 </div>
+                </Link>
                 
                 <div className="list">
                     <i className="material-icons-outlined icons">

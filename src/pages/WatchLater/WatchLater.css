@@ -1,0 +1,19 @@
+.container-watchlater {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "sidebar watch watch  watch"
+    "sidebar watch watch  watch"
+    ;
+}
+
+.watchlater-video-container {
+    grid-area: watch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.5rem;
+    margin-top: 3rem; 
+}
