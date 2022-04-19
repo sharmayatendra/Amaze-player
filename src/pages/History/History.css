@@ -1,0 +1,29 @@
+.container-history {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "sidebar .     .      clear"
+    "sidebar history history  history"
+    "sidebar history history  history"
+    ;
+}
+
+.history-video-container {
+    grid-area: history;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.5rem;
+    margin-top: 3rem; 
+}
+
+.clear-btn {
+    grid-area: clear;
+    border: none;
+    margin-top: 3rem;
+    font-size: 1.2em;
+    background-color: var(--body-bg-color);
+    color: var(--color-white);
+}
