@@ -1,24 +1,12 @@
-import React , { useState , useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
 import "./VideoListing.css"
 import { Nav , Sidebar , VideoCard } from '../../components/index'
+import { useVideo } from '../../context/video-context'
 
 function VideoListing() {
-  const [videos,setVideos] = useState([])
-
-  useEffect(() => {
-    (async function fetchVideos() {
-      try {
-        const resp = await axios.get("/api/videos")
-        setVideos(resp.data.videos)
-      }catch(error) {
-        console.log(error);
-      }
-    })()
-  })
+  const { videos } = useVideo()
 
   return (
-    
     <div className="container-product">
       <Nav />
       <Sidebar />
