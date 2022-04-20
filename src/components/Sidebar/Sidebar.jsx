@@ -42,16 +42,14 @@ function Sidebar() {
                 </div>
                 </Link>
                 
+                <Link to='/history'>
                 <div className="list">
                     <i className="material-icons-outlined icons">
                         history
                     </i>
                     <p className="list-item sidebar-text">History</p>
                 </div>
-                
-                
-                
-                
+                </Link>
                 
             </div>
         </div>

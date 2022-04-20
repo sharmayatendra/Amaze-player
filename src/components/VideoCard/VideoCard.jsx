@@ -1,16 +1,33 @@
 import React , { useState } from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../context/auth-context';
 import {Modal} from '../index';
 import './VideoCard.css'
+import { useHistory } from '../../context/history-context';
 
 function VideoCard({video , videoId}) {
     const [showModal,setShowModal] = useState(false);
+    const {setHistoryVideos} = useHistory()
+    const {state: {token}} = useAuth()
+
+    const addToHistory = async (video) => {
+        try{
+            const resp = await axios.post('/api/user/history' , {video} , {
+                headers: {authorization: token}
+            })
+            console.log(resp)
+            setHistoryVideos(resp.data.history)
+        } catch(err) {
+            console.log(err);
+        }
+    }
   return (
 <>
     <div className="card">
         <div className="card-wrapper">
         <Link to={`/video/${videoId}`}>
-            <div className="card-img">
+            <div className="card-img" onClick={() => addToHistory(video)}>
             <img src={`https://i.ytimg.com/vi/${videoId}/hq720.jpg`} alt="mobile" />
             </div>
             </Link>
