@@ -17,12 +17,14 @@ function Sidebar() {
                 </div>
                 </Link>
 
+                <Link to='/playlist'>
                 <div className="list">
                     <i className="material-icons-outlined icons">
                         playlist_add
                     </i>
                     <p className="list-item sidebar-text">Playlist</p>
                 </div>
+                </Link>
 
                 <Link to='/like'>
                 <div className="list">

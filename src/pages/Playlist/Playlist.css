@@ -1,0 +1,20 @@
+.container-playlist {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "sidebar playlist playlist playlist"
+    "sidebar playlist playlist playlist"
+    ;
+}
+
+.playlist-video-container {
+    grid-area: playlist;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    
+}
