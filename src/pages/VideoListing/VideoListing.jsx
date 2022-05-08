@@ -1,7 +1,7 @@
 import React from 'react'
 import "./VideoListing.css"
 import { Nav , Sidebar , VideoCard } from '../../components/index'
-import { useVideo } from '../../context/video-context'
+import { useVideo } from '../../context/index'
 
 function VideoListing() {
   const { videos } = useVideo()

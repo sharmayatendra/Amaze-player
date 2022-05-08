@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Nav.css"
 import { Link } from 'react-router-dom';
-import { useAuth } from '../../context/auth-context';
+import { useAuth } from '../../context/index';
 
 function Nav() {
   const {state: {isAuth}, dispatch} = useAuth()
